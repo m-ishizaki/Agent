@@ -2,5 +2,6 @@
 
 public static class MyClass
 {
-    public static int Add(string a1, string a2) => Convert.ToInt32(a1) + Convert.ToInt32(a2);
+    public static int Add(string a1, string a2, string a3) =>
+        Convert.ToInt32(a1) + Convert.ToInt32(a2) + Convert.ToInt32(a3);
 }
