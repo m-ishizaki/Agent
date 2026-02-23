@@ -3,11 +3,13 @@
 Console.WriteLine("Hello, World!");
 
 int result =
-args.Length == 2
+args.Length == 0
+    ? MyClass.Add()
+    : args.Length == 2
     ? MyClass.Add(args[0], args[1])
     : 0;
 
-Console.WriteLine("result: {result}");
+Console.WriteLine($"result: {result}");
 
 /*
 public static class MyClass
