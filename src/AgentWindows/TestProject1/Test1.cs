@@ -12,10 +12,11 @@ namespace TestProject1
             // Arrange
             string a1 = "5";
             string a2 = "3";
-            int expected = 8;
+            string a3 = "2";
+            int expected = 10;
 
             // Act
-            int result = MyClass.Add(a1, a2);
+            int result = MyClass.Add(a1, a2, a3);
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -27,10 +28,11 @@ namespace TestProject1
             // Arrange
             string a1 = "-5";
             string a2 = "-3";
-            int expected = -8;
+            string a3 = "-2";
+            int expected = -10;
 
             // Act
-            int result = MyClass.Add(a1, a2);
+            int result = MyClass.Add(a1, a2, a3);
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -42,10 +44,11 @@ namespace TestProject1
             // Arrange
             string a1 = "10";
             string a2 = "-4";
-            int expected = 6;
+            string a3 = "-1";
+            int expected = 5;
 
             // Act
-            int result = MyClass.Add(a1, a2);
+            int result = MyClass.Add(a1, a2, a3);
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -57,10 +60,11 @@ namespace TestProject1
             // Arrange
             string a1 = "0";
             string a2 = "42";
+            string a3 = "0";
             int expected = 42;
 
             // Act
-            int result = MyClass.Add(a1, a2);
+            int result = MyClass.Add(a1, a2, a3);
 
             // Assert
             Assert.AreEqual(expected, result);
@@ -72,9 +76,10 @@ namespace TestProject1
             // Arrange
             string a1 = "abc";
             string a2 = "5";
+            string a3 = "1";
 
             // Act
-            void Act() => MyClass.Add(a1, a2);
+            void Act() => MyClass.Add(a1, a2, a3);
 
             // Assert
             Assert.Throws<FormatException>(Act);
@@ -86,10 +91,11 @@ namespace TestProject1
             // Arrange
             string a1 = "2147483647";
             string a2 = "0";
+            string a3 = "0";
             int expected = 2147483647;
 
             // Act
-            int result = MyClass.Add(a1, a2);
+            int result = MyClass.Add(a1, a2, a3);
 
             // Assert
             Assert.AreEqual(expected, result);
