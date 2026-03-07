@@ -4,9 +4,9 @@ string? input1 = Console.ReadLine();
 Console.Write("2つ目の数値を入力してください: ");
 string? input2 = Console.ReadLine();
 
-if (int.TryParse(input1, out int a) && int.TryParse(input2, out int b))
+if (long.TryParse(input1, out long a) && long.TryParse(input2, out long b))
 {
-    int result = a + b;
+    long result = a + b;
     Console.WriteLine($"結果: {a} + {b} = {result}");
 }
 else
